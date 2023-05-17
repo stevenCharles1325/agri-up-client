@@ -6,11 +6,7 @@ import Authentication from "@/components/Authentication";
 import MainAppBar from "@/components/AppBar";
 import BottomAppBar from "@/components/AppBar/BottomAppBar";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
