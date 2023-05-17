@@ -2,7 +2,7 @@
 
 import React from "react";
 import './globals.css'
-import Authentication from "@/components/Authentication";
+import Authentication from "@/components/rename";
 import MainAppBar from "@/components/AppBar";
 import BottomAppBar from "@/components/AppBar/BottomAppBar";
 
