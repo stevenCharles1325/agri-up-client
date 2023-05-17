@@ -11,7 +11,7 @@ const Authenticator = ({ children }: { children: React.ReactNode }) => {
 
     const startVerification = async () => {
         try {
-            await verifyUser();
+            // await verifyUser();
         } catch (err) {
             console.log(err);
         } finally {

@@ -1,11 +1,10 @@
 'use client';
 
 import React from "react";
-import { Inter } from 'next/font/google'
 import './globals.css'
-import Authentication from "@/components/authentication";
-
-const inter = Inter({ subsets: ['latin'] })
+import Authentication from "@/components/Authentication";
+import MainAppBar from "@/components/AppBar";
+import BottomAppBar from "@/components/AppBar/BottomAppBar";
 
 export const metadata = {
   title: 'Create Next App',
@@ -19,9 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Authentication>
-          { children }
+          <div className="w-screen h-screen flex flex-col">
+            <MainAppBar/>
+            <div className="grow w-full">
+              <div className="h-fit overflow-auto bg-white">
+                { children }
+              </div>
+            </div>
+            <BottomAppBar/>
+          </div>
         </Authentication>
       </body>
     </html>
